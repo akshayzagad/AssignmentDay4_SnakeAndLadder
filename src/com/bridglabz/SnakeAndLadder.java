@@ -34,6 +34,11 @@ public class SnakeAndLadder {
             presentPlayerPosition=presentPlayerPosition+currentPosion;
             System.out.println("Player " + presentPlayerPosition);
 }
-
+        if (presentPlayerPosition > 100) {
+            int temp = presentPlayerPosition - 100;
+            presentPlayerPosition = presentPlayerPosition - temp;
+            System.out.println("Win the game player position is : " + presentPlayerPosition);
+        } else
+            System.out.println("Win the game player position is : " + presentPlayerPosition);
     }
 }
